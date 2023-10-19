@@ -17,9 +17,9 @@
     <br />
     <a href="#">View Demo</a>
     ·
-    <a href="mailto:stewart.anderson+sdgstarter@salesforce.com">Report Bug</a>
+    <a href="https://github.com/SalesforceLabs/SDGStarterPack/issues/new">Report Bug</a>
     ·
-    <a href="mailto:stewart.anderson+sdgstarter@salesforce.com">Request Feature</a>
+    <a href="https://github.com/SalesforceLabs/SDGStarterPack/issues/new">Request Feature</a>
   </p>
 </div>
 

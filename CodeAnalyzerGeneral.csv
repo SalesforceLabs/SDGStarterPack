@@ -1,0 +1,3 @@
+"Problem","Severity","File","Line","Column","Rule","Description","URL","Category","Engine"
+"1","1","/Users/stewart.anderson/DEV/GitHub/SDG-Starter-Pack/force-app/main/default/classes/SDG_Get_Latest_List.cls","1","1","files-must-compile","PMDException: Error while parsing /Users/stewart.anderson/DEV/GitHub/SDG-Starter-Pack/force-app/main/default/classes/SDG_Get_Latest_List.cls
+Caused by: net.sourceforge.pmd.lang.ast.ParseException: apex.jorje.services.exception.ParseException: Syntax(error = UnexpectedToken(loc = (53, 20, 446, 448), token = 'as'))","","Scanner Internal","pmd"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Measures_Exceeded__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Number of related Measures which were Exceeded</inlineHelpText>
+    <label>Total Measures Exceeded</label>
+    <summaryFilterItems>
+        <field>SDG_Outcome_Measure__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Exceeded</value>
+    </summaryFilterItems>
+    <summaryForeignKey>SDG_Outcome_Measure__c.SDG_Outcome__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

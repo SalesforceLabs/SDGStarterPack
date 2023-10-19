@@ -1,0 +1,15 @@
+/opt/homebrew/Cellar/node@18/18.18.2/bin/node /opt/homebrew/bin/sfdx hardis:config:get --level project --json/opt/homebrew/Cellar/node@18/18.18.2/bin/node /opt/homebrew/bin/sfdx hardis:config:get --level user --json[sfdx-hardis] Updated config file config/user/.sfdx-hardis.stewart.anderson.yml with values: 
+{
+  "installedApps": [
+    "git"
+  ]
+}
+[sfdx-hardis] Updated config file config/user/.sfdx-hardis.stewart.anderson.yml with values: 
+{
+  "installedApps": [
+    "git"
+  ]
+}
+[sfdx-hardis] {}
+[sfdx-hardis] Defined "false" as git core.quotepath
+[sfdx-hardis] {"installedApps":["git"]}

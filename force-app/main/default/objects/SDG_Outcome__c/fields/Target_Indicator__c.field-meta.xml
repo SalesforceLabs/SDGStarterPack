@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Indicator__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Target Indicator</label>
+    <referenceTo>SDG_Target_Indicator__c</referenceTo>
+    <relationshipLabel>Outcomes</relationshipLabel>
+    <relationshipName>SDG_Outcome</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

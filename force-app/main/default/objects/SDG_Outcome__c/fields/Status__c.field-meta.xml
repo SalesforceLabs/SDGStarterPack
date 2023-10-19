@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Set the current overall status for the Outcome. Note that some automation will also update this field.</inlineHelpText>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Behind</fullName>
+                <color>#FF0000</color>
+                <default>false</default>
+                <label>Behind</label>
+            </value>
+            <value>
+                <fullName>On Track</fullName>
+                <color>#33FF33</color>
+                <default>true</default>
+                <label>On Track</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <color>#33FF33</color>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Exceeded</fullName>
+                <color>#33FF33</color>
+                <default>false</default>
+                <label>Exceeded</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <color>#FFFF66</color>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

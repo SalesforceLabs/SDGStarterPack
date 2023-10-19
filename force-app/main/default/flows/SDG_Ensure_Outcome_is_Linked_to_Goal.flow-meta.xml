@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <decisions>
+        <description>Decides what to update based on the record changes.</description>
+        <name>Process_Record_update</name>
+        <label>Process Record Update</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>No Relavent Changes Found</defaultConnectorLabel>
+        <rules>
+            <name>Target_Indicator_was_Set_or_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sdgsfdev__Target_Indicator__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Target_and_Goal</targetReference>
+            </connector>
+            <label>Target Indicator was Set or Updated</label>
+        </rules>
+        <rules>
+            <name>Goal_Target_Was_Set_or_Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sdgsfdev__Goal_Target__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_SDG_Goal_Record_ID</targetReference>
+            </connector>
+            <label>Goal Target Was Set or Updated</label>
+        </rules>
+    </decisions>
+    <description>Ensures that an Outcome is linked back to the overall SDG, even if it is linked at a lower level.</description>
+    <environments>Default</environments>
+    <interviewLabel>SDG - Ensure Outcome is Linked to Goal {!$Flow.CurrentDateTime}</interviewLabel>
+    <isOverridable>true</isOverridable>
+    <label>SDG - Ensure Outcome is Linked to Goal</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Set_SDG_Goal_Record_ID</name>
+        <label>Update Goal</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Goal__c</field>
+            <value>
+                <elementReference>$Record.Goal_Target__r.Goal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Target_and_Goal</name>
+        <label>Update Target and Goal</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>Goal_Target__c</field>
+            <value>
+                <elementReference>$Record.Target_Indicator__r.Goal_Target__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Goal__c</field>
+            <value>
+                <elementReference>$Record.Target_Indicator__r.Goal_Target__r.Goal__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Process_Record_update</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Goal_Target__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Target_Indicator__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>SDG_Outcome__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

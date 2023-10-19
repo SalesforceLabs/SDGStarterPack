@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>small_logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Sustainable Development Goals (SDGs)</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>SDG Admin</label>
+    <navType>Standard</navType>
+    <tabs>SDG_Goal__c</tabs>
+    <tabs>SDG_Goal_Target__c</tabs>
+    <tabs>SDG_Target_Indicator__c</tabs>
+    <tabs>SDG_Outcome__c</tabs>
+    <tabs>SDG_Outcome_Measure__c</tabs>
+    <tabs>SDG_Administration</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>SDG_UtilityBar</utilityBar>
+</CustomApplication>

@@ -56,8 +56,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This package provides you with a direct integration to the United Nations (UN) Statistics API, which holds the latest version of the Sustainable Development Goals (SDGs) and their related Targets and Indicators. A weekly, automated, sync allows the Goals, Targets and Indicators to be upserted into your Salesforce org so that you can link activity to a Goal, Target or Indicator.
 
 Once activity is linked, you can then easily report on your activity against the SDGs! Track your impact and see areas for improvement.
@@ -109,15 +107,7 @@ To Do...
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](#/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/SalesforceLabs/SDGStarterPack/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,6 +148,3 @@ Stewart Anderson - stewart.anderson+sdgstarter@salesforce.com
 Project Link: https://github.com/SalesforceLabs/SDGStarterPack
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 

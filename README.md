@@ -84,8 +84,6 @@ Before you start the installation of this package. Please be aware that this wil
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Go to the AppExchange page here: 
 2. Click on the Get It Now button
 3. Install for System Administrators and approve the addition of the trusted remote site.

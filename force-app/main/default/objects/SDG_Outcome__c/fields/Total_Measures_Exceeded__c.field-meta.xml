@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Measures_Exceeded__c</fullName>
+    <deprecated>false</deprecated>
     <description>Rollup count of exceeded measures</description>
     <externalId>false</externalId>
     <inlineHelpText>Total Number of related Measures which were Exceeded</inlineHelpText>

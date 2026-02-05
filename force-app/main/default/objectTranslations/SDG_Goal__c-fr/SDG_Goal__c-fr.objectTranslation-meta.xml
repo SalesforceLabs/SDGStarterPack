@@ -9,5 +9,13 @@
         <value>Objectifs</value>
     </caseValues>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Goal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Goal ID --></nameFieldLabel>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The status of the current measure. --></help>
     <label>Estado</label>
     <name>Status__c</name>
     <picklistValues>
@@ -7,19 +8,19 @@
         <translation>Retrasado</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>On Track</masterLabel>
-        <translation>En camino</translation>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>Cancelado</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Completed</masterLabel>
         <translation>Completado</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Cancelled</masterLabel>
-        <translation>Cancelado</translation>
-    </picklistValues>
-    <picklistValues>
         <masterLabel>Exceeded</masterLabel>
         <translation>Superado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>On Track</masterLabel>
+        <translation>En camino</translation>
     </picklistValues>
 </CustomFieldTranslation>

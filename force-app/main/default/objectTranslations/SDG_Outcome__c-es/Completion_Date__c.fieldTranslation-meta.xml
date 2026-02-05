@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The date which the outcome was delivered. --></help>
     <label>Fecha de finalización</label>
     <name>Completion_Date__c</name>
 </CustomFieldTranslation>

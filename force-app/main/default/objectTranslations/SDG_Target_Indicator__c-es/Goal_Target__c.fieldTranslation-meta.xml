@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Select the goal target this indicator measures. --></help>
     <label>Meta de objetivo</label>
     <name>Goal_Target__c</name>
     <relationshipLabel>Indicadores de meta</relationshipLabel>

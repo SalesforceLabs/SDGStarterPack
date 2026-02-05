@@ -143,6 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
     <description>Measures related to a specific outcome</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>

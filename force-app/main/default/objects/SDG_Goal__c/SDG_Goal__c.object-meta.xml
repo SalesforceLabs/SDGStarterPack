@@ -149,6 +149,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>Default_Layout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
     <description>Sustainable Development Goals</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>

@@ -9,5 +9,6 @@
         <value>Mesures de résultat ODD</value>
     </caseValues>
     <gender>Feminine</gender>
+    <nameFieldLabel><!-- Measure ID --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

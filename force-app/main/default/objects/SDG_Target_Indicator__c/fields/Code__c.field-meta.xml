@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Code__c</fullName>
     <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
     <description>Unique identifier code for the indicator</description>
     <externalId>true</externalId>
     <inlineHelpText>Enter the indicator code (e.g., 1.1.1, 1.2.1).</inlineHelpText>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total related measures which are &apos;Completed&apos; or &apos;Exceeded&apos; --></help>
     <label>Total des mesures terminées</label>
     <name>Total_Completed_Measures__c</name>
 </CustomFieldTranslation>

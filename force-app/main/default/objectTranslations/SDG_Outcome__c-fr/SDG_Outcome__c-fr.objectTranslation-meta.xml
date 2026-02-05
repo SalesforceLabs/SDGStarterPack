@@ -9,5 +9,21 @@
         <value>Résultats ODD</value>
     </caseValues>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>SDG Outcome Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Related --></label>
+            <section>Related</section>
+        </sections>
+        <sections>
+            <label><!-- Statistics --></label>
+            <section>Statistics</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- SDG Outcome ID --></nameFieldLabel>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

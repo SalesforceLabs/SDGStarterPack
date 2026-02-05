@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The amount which was actually delivered for this measure. For example if the target was 100 meals and 90 were delivered, then this would be set to 90. --></help>
     <label>Quantité livrée</label>
     <name>Delivered_Amount__c</name>
 </CustomFieldTranslation>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Description__c</fullName>
+    <deprecated>false</deprecated>
     <description>Detailed description of the SDG</description>
     <externalId>false</externalId>
-    <inlineHelpText>Provide a detailed description of the goal's objectives.</inlineHelpText>
+    <inlineHelpText>Provide a detailed description of the goal&apos;s objectives.</inlineHelpText>
     <label>Description</label>
     <length>32768</length>
     <trackTrending>false</trackTrending>

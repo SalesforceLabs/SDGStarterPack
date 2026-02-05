@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Goal_Target__c</fullName>
+    <deprecated>false</deprecated>
     <description>Parent SDG Goal Target</description>
     <externalId>false</externalId>
     <inlineHelpText>Select the goal target this indicator measures.</inlineHelpText>

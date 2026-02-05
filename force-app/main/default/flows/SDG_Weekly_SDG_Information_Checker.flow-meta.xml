@@ -16,7 +16,6 @@
         </inputParameters>
         <nameSegment>SDG_Get_Latest_List</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>58.0</apiVersion>
     <description>Checks the UN Statistics API on a weekly basis and upserts relevant information into the Salesforce org.</description>
@@ -56,5 +55,5 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Obsolete</status>
+    <status>Draft</status>
 </Flow>

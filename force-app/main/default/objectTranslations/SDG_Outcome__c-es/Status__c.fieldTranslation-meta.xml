@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Set the current overall status for the Outcome. Note that some automation will also update this field. --></help>
     <label>Estado</label>
     <name>Status__c</name>
     <picklistValues>
@@ -7,8 +8,8 @@
         <translation>Retrasado</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>On Track</masterLabel>
-        <translation>En camino</translation>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>Cancelado</translation>
     </picklistValues>
     <picklistValues>
         <masterLabel>Completed</masterLabel>
@@ -19,7 +20,7 @@
         <translation>Superado</translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>Cancelled</masterLabel>
-        <translation>Cancelado</translation>
+        <masterLabel>On Track</masterLabel>
+        <translation>En camino</translation>
     </picklistValues>
 </CustomFieldTranslation>

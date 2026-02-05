@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The target amount for the measure. For example 100 meals. --></help>
     <label>Quantité cible</label>
     <name>Target_Amount__c</name>
 </CustomFieldTranslation>

@@ -9,5 +9,13 @@
         <value>Indicateurs de cible</value>
     </caseValues>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Target Indicator Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Target Indicator ID --></nameFieldLabel>
     <startsWith>Vowel</startsWith>
 </CustomObjectTranslation>

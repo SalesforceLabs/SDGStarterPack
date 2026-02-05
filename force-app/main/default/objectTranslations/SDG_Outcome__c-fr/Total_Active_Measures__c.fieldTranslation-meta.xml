@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Total Number of linked Measures which are not Cancelled --></help>
     <label>Total des mesures actives</label>
     <name>Total_Active_Measures__c</name>
 </CustomFieldTranslation>

@@ -4,10 +4,10 @@
       "path": "force-app",
       "default": true,
       "package": "SDG Starter Pack",
-      "versionName": "WINTER",
-      "versionNumber": "0.3.0.NEXT",
+      "versionName": "SPRING",
+      "versionNumber": "0.4.0.NEXT",
       "versionDescription": "",
-      "ancestorVersion": "0.2.0"
+      "ancestorVersion": "0.3.0"
     }
   ],
   "name": "SDG-STARTER-PACK",
@@ -21,6 +21,7 @@
     "SDG Starter Pack@0.1.0-3": "04tDm000000DaFOIA0",
     "SDG Starter Pack@0.1.0-4": "04tDm000000DaJbIAK",
     "SDG Starter Pack@0.2.0-1": "04tDm000000DaJgIAK",
-    "SDG Starter Pack@0.3.0-1": "04tDm000000DaJvIAK"
+    "SDG Starter Pack@0.3.0-1": "04tDm000000DaJvIAK",
+    "SDG Starter Pack@0.4.0-1": "04tDm0000011Q74IAE"
   }
 }

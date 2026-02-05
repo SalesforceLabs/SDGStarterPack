@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status__c</fullName>
+    <description>Current progress status of the outcome</description>
     <externalId>false</externalId>
     <inlineHelpText>Set the current overall status for the Outcome. Note that some automation will also update this field.</inlineHelpText>
     <label>Status</label>

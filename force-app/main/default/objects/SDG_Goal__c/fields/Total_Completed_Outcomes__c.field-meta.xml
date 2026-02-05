@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Completed_Outcomes__c</fullName>
+    <description>Rollup count of completed outcomes</description>
     <externalId>false</externalId>
     <inlineHelpText>Total Number of Completed, Exceeded or On Track Outcomes related to this goals</inlineHelpText>
     <label>Total Completed Outcomes</label>

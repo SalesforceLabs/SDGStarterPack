@@ -2,7 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Target_Indicator__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>Associated target indicator</description>
     <externalId>false</externalId>
+    <inlineHelpText>Select the target indicator this outcome measures against.</inlineHelpText>
     <label>Target Indicator</label>
     <referenceTo>SDG_Target_Indicator__c</referenceTo>
     <relationshipLabel>Outcomes</relationshipLabel>

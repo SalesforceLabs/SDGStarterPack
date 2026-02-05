@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Delivered_Amount__c</fullName>
     <defaultValue>0</defaultValue>
+    <description>Actual delivered quantity</description>
     <externalId>false</externalId>
     <inlineHelpText>The amount which was actually delivered for this measure. For example if the target was 100 meals and 90 were delivered, then this would be set to 90.</inlineHelpText>
     <label>Delivered Amount</label>

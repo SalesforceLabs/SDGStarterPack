@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Tier__c</fullName>
+    <description>Classification tier of the indicator</description>
     <externalId>false</externalId>
+    <inlineHelpText>Enter the tier classification (I, II, or III).</inlineHelpText>
     <label>Tier</label>
     <length>255</length>
     <required>false</required>

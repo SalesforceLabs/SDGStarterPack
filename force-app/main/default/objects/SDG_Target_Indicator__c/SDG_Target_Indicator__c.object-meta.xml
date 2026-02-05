@@ -149,6 +149,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>Default</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <description>SDG Target Indicators for measuring goal progress</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>

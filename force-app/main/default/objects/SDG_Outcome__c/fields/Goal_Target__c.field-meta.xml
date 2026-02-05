@@ -2,7 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Goal_Target__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>Associated SDG Goal Target</description>
     <externalId>false</externalId>
+    <inlineHelpText>Select the specific goal target this outcome addresses.</inlineHelpText>
     <label>Goal Target</label>
     <referenceTo>SDG_Goal_Target__c</referenceTo>
     <relationshipLabel>Outcomes</relationshipLabel>

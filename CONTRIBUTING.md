@@ -66,10 +66,7 @@ This flow will:
 - Update dependencies
 - Deploy the metadata
 - Assign required permission sets:
-  - Technology_Transfer_Starter_Visa_Management
-  - Technology_Transfer_Starter_Permission
-  - Technology_Transfer_Starter_Space_Manager
-  - Technology_Transfer_Starter_Mentoring_Manager
+  - SDG Admin
 
 ### 3. Make Your Changes
 

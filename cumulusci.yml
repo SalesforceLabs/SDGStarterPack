@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '7.2.4'
+project:
+    name: SDGStarterPack
+    package:
+        name: SDGStarterPack
+        namespace: sdgsfdev
+        api_version: '58.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/SDGStarterPack/tests
+            options:
+                outputdir: robot/SDGStarterPack/results
+
+    robot_testdoc:
+        options:
+            path: robot/SDGStarterPack/tests
+            output: robot/SDGStarterPack/doc/SDGStarterPack_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75

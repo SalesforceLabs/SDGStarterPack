@@ -1,148 +1,87 @@
-<a name="readme-top"></a>
+# SDG Starter Pack
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/SalesforceLabs/SDGStarterPack">
-    <img src="logo.png" alt="Logo" height="200">
-  </a>
+A foundation for Sustainable Development Goal (SDG) tracking and reporting on Salesforce
 
-  <h3 align="center">Sustainable Development Goals (SDGs) - Starter Pack</h3>
+SDG Starter Pack provides a set of Fields, Page Layouts, Objects, Record Types and Automation to help you get started with recording and tracking your Salesforce records against sustainable development goals.
 
-  <p align="center">
-    A Salesforce platform package to provide integration with the United Nations Sustainable Development Goals, to allow tracking against activity within a Salesforce org.
-    <br />
-    <a href="#"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="https://github.com/SalesforceLabs/SDGStarterPack/issues/new">Report Bug</a>
-    ·
-    <a href="https://github.com/SalesforceLabs/SDGStarterPack/issues/new">Request Feature</a>
-  </p>
-</div>
+## Installation
 
+### Option 1: Install from AppExchange (Recommended)
 
+The easiest way to install SDG Starter Pack is through the Salesforce AppExchange:
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+[Install from AppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=874d6137-448e-462e-8e25-bf17a0f3a544)
 
+1. Click the link above or visit the AppExchange listing
+2. Click "Get It Now"
+3. Choose whether to install in production or sandbox
+4. Log in to your Salesforce org
+5. Follow the installation wizard
+6. Select the appropriate installation option:
+   - **Install for Admins Only** - Recommended for initial setup
+   - **Install for All Users** - After configuring permissions
+   - **Install for Specific Profiles** - For controlled rollout
 
+### Option 2: Direct Installation Link
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+You can also install the latest package version directly using the package installation URL:
 
-This package provides you with a direct integration to the United Nations (UN) Statistics API, which holds the latest version of the Sustainable Development Goals (SDGs) and their related Targets and Indicators. A weekly, automated, sync allows the Goals, Targets and Indicators to be upserted into your Salesforce org so that you can link activity to a Goal, Target or Indicator.
+**Production:**
+```
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDm000000DaJvIAK
+```
 
-Once activity is linked, you can then easily report on your activity against the SDGs! Track your impact and see areas for improvement.
+**Sandbox:**
+```
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04tDm000000DaJvIAK
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Replace `04t...` with the latest package version ID. Contact the maintainers for the current version ID.
 
+## Post-Installation Setup
 
+After installation, assign the appropriate permission sets to users:
 
-### Built With
+- **SDG User Permission** - Base permissions for all users
+- **SDG Admin Permission** - For administrators who can change configuration
 
-This is built on the Salesforce platform with native development options such as Apex.
+### Assigning Permission Sets
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. Navigate to **Setup** > **Users** > **Permission Sets**
+2. Select the appropriate permission set
+3. Click **Manage Assignments**
+4. Click **Add Assignments**
+5. Select users and click **Assign**
 
+## Features
 
+SDG Starter Pack includes:
 
-<!-- GETTING STARTED -->
-## Getting Started
+- SDG objects and fields
+- Integration with United Nations(UN) API
+- Custom page layouts and record types
+- Pre-configured automation
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Before you start the installation of this package. Please be aware that this will add a trusted remote site to your Salesforce org. This will the the url for the UN Statistics API. If this is a concern, then you will be unable to install the package.
-
-### Installation
-
-1. Go to the AppExchange page here: 
-2. Click on the Get It Now button
-3. Install for System Administrators and approve the addition of the trusted remote site.
-4. Wait for the installation to complete. (System Administrators will be notified via email)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-To Do...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/SalesforceLabs/SDGStarterPack/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Interested in contributing to SDG Starter Pack? Check out our [Contributing Guide](CONTRIBUTING.md) for information on:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+- Setting up your development environment
+- Creating scratch orgs
+- Making and testing changes
+- Submitting pull requests
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Support
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+For issues, questions, or feature requests:
 
+- Open an issue in the [GitHub repository](https://github.com/SalesforceLabs/SDGStarterPack/issues)
+- Contact Stewart Anderson at [stewart.anderson@salesforce.com](mailto:stewart.anderson@salesforce.com)
 
-
-<!-- LICENSE -->
 ## License
 
-Distributed under the BSD 3-Clause License. See `LICENSE` for more information.
+See LICENSE.md
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
-
-
-<!-- CONTACT -->
-## Contact
-
-Stewart Anderson - stewart.anderson+sdgstarter@salesforce.com
-
-Project Link: https://github.com/SalesforceLabs/SDGStarterPack
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Built with ❤️ by Salesforce Labs

@@ -9,6 +9,30 @@ public with sharing class SDG_Get_Latest_List {
 
     public class sdgAppException extends Exception {}
 
+    /**
+     * Upserts records on their Code external id in user mode with partial-success handling.
+     * Valid rows commit; any row-level failures are aggregated and thrown so the (async) job
+     * is marked Failed instead of one bad record from the UN API rolling back the whole batch.
+     */
+    private static void upsertOnCodeOrThrow(List<SObject> records, Schema.SObjectField codeField, String context) {
+        if (records == null || records.isEmpty()) {
+            return;
+        }
+        List<Database.UpsertResult> results = Database.upsert(records, codeField, false, AccessLevel.USER_MODE);
+        List<String> failures = new List<String>();
+        for (Database.UpsertResult result : results) {
+            if (!result.isSuccess()) {
+                for (Database.Error err : result.getErrors()) {
+                    failures.add(err.getStatusCode() + ': ' + err.getMessage());
+                }
+            }
+        }
+        if (!failures.isEmpty()) {
+            throw new sdgAppException(context + ' upsert failed for ' + failures.size() + ' of '
+                + results.size() + ' record(s): ' + String.join(failures, ' | '));
+        }
+    }
+
     // INVOCABLE METHOD
     @InvocableMethod(label='Fetch Goals' description='Fetches SDG Goals from API')
     public static List<Boolean> invocableFetchGoals(List<Boolean> shouldExecute) {
@@ -56,8 +80,8 @@ public with sharing class SDG_Get_Latest_List {
                 goalsToInsert.add(newGoal);
             }
 
-            // Bulk insert goals
-            upsert as user goalsToInsert sdgsfdev__Code__c;
+            // Bulk upsert goals; partial-success so one malformed record can't roll back the batch
+            upsertOnCodeOrThrow(goalsToInsert, sdgsfdev__SDG_Goal__c.sdgsfdev__Code__c, 'Goals');
 
             if (!Test.isRunningTest()){
                 for(Integer i = 0; i < goals.size(); i++) {
@@ -136,7 +160,7 @@ public with sharing class SDG_Get_Latest_List {
             }
 
             System.debug('Upserting Targets');
-            upsert as user targetsToInsert sdgsfdev__Code__c;
+            upsertOnCodeOrThrow(targetsToInsert, sdgsfdev__SDG_Goal_Target__c.sdgsfdev__Code__c, 'Targets');
 
             Map<Id, List<sdgsfdev__SDG_Target_Indicator__c>> targetToIndicatorsMap = new Map<Id, List<sdgsfdev__SDG_Target_Indicator__c>>();
 
@@ -164,8 +188,9 @@ public with sharing class SDG_Get_Latest_List {
             System.enqueueJob(new AsyncBulkInsertIndicators(serializedMap));
 
         } else {
-            System.debug('FetchTarget API callout failed. Status code: ' + target_response.getStatusCode());
-            System.debug('Response: ' + target_response.getBody());
+            System.debug(LoggingLevel.ERROR, 'FetchTargets API callout failed. Status code: ' + target_response.getStatusCode() + ' Response: ' + target_response.getBody());
+            // Surface the failure so the async job is marked Failed instead of silently leaving partial reference data
+            throw new sdgAppException('FetchTargets request failed for goal ' + goalCode + ' with status ' + target_response.getStatusCode());
         }
     }
 
@@ -205,7 +230,7 @@ public with sharing class SDG_Get_Latest_List {
             }
 
             System.debug('Upserting Indicators');
-            upsert as user allIndicatorsToInsert sdgsfdev__Code__c;
+            upsertOnCodeOrThrow(allIndicatorsToInsert, sdgsfdev__SDG_Target_Indicator__c.sdgsfdev__Code__c, 'Indicators');
         }
     }
 

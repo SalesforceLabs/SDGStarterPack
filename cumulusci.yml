@@ -2,9 +2,9 @@ minimum_cumulusci_version: '7.2.4'
 project:
     name: SDGStarterPack
     package:
-        name: SDGStarterPack
+        name: SDG Starter Pack
         namespace: sdgsfdev
-        api_version: '58.0'
+        api_version: '67.0'
     git:
     source_format: sfdx
 

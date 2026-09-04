@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>58.0</apiVersion>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
         <description>Check current status against target and update the Status field</description>
         <name>Status_Check_and_Update</name>
         <label>Status Check and Update</label>
-        <locationX>314</locationX>
-        <locationY>323</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Completed</name>
@@ -67,8 +68,8 @@
         <description>Set the Status to Completed</description>
         <name>Set_Completed</name>
         <label>Set Completed</label>
-        <locationX>50</locationX>
-        <locationY>431</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <inputAssignments>
             <field>Status__c</field>
             <value>
@@ -80,8 +81,8 @@
     <recordUpdates>
         <name>Set_Exceeded</name>
         <label>Set Exceeded</label>
-        <locationX>314</locationX>
-        <locationY>431</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <inputAssignments>
             <field>Status__c</field>
             <value>
@@ -91,7 +92,7 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>188</locationX>
+        <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Status_Check_and_Update</targetReference>

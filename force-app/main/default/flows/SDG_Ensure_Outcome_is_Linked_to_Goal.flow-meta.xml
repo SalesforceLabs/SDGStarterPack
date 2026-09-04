@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>58.0</apiVersion>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
         <description>Decides what to update based on the record changes.</description>
         <name>Process_Record_update</name>
         <label>Process Record Update</label>
-        <locationX>314</locationX>
-        <locationY>287</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <defaultConnectorLabel>No Relavent Changes Found</defaultConnectorLabel>
         <rules>
             <name>Target_Indicator_was_Set_or_Updated</name>
@@ -66,8 +67,8 @@
     <recordUpdates>
         <name>Set_SDG_Goal_Record_ID</name>
         <label>Update Goal</label>
-        <locationX>314</locationX>
-        <locationY>395</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <inputAssignments>
             <field>Goal__c</field>
             <value>
@@ -79,8 +80,8 @@
     <recordUpdates>
         <name>Update_Target_and_Goal</name>
         <label>Update Target and Goal</label>
-        <locationX>50</locationX>
-        <locationY>395</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <inputAssignments>
             <field>Goal_Target__c</field>
             <value>
@@ -96,7 +97,7 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>188</locationX>
+        <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Process_Record_update</targetReference>

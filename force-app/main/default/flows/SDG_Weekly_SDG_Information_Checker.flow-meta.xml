@@ -3,8 +3,8 @@
     <actionCalls>
         <name>Upsert_SDG_Information</name>
         <label>Upsert SDG Information</label>
-        <locationX>176</locationX>
-        <locationY>252</locationY>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
         <actionName>SDG_Get_Latest_List</actionName>
         <actionType>apex</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -17,7 +17,8 @@
         <nameSegment>SDG_Get_Latest_List</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
-    <apiVersion>58.0</apiVersion>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <description>Checks the UN Statistics API on a weekly basis and upserts relevant information into the Salesforce org.</description>
     <environments>Default</environments>
     <interviewLabel>SDG - Weekly SDG Information Checker {!$Flow.CurrentDateTime}</interviewLabel>
@@ -43,7 +44,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <start>
-        <locationX>50</locationX>
+        <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>Upsert_SDG_Information</targetReference>

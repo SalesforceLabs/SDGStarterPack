@@ -37,13 +37,13 @@ sf config set target-dev-hub=TTSDevHub
 Create a scratch org using the Salesforce CLI:
 
 ```bash
-sf org create scratch --definition-file orgs/dev.json --alias tts_dev --duration-days 30 --set-default
+sf org create scratch --definition-file orgs/dev.json --alias sdg_dev --duration-days 30 --set-default
 ```
 
 Then connect it to CumulusCI:
 
 ```bash
-cci org import tts_dev tts_dev
+cci org import sdg_dev sdg_dev
 ```
 
 #### Option B: Using CumulusCI
@@ -51,7 +51,7 @@ cci org import tts_dev tts_dev
 Create a scratch org directly with CumulusCI:
 
 ```bash
-cci org scratch dev tts_dev --days 30
+cci org scratch dev sdg_dev --days 30
 ```
 
 ### 2. Deploy to Development Org
@@ -59,7 +59,7 @@ cci org scratch dev tts_dev --days 30
 Deploy the solution to your dev org using CumulusCI:
 
 ```bash
-cci flow run dev_org --org tts_dev
+cci flow run dev_org --org sdg_dev
 ```
 
 This flow will:
@@ -77,7 +77,7 @@ Make your changes in the org through Setup or using the Salesforce UI. You can a
 After making changes in the org, retrieve them back to your local source:
 
 ```bash
-cci task run retrieve_changes --org tts_dev
+cci task run retrieve_changes --org sdg_dev
 ```
 
 Review the changes in your source directory to ensure only the intended changes were retrieved.
@@ -89,20 +89,20 @@ Create a QA org to test your changes:
 #### Using Salesforce CLI + CumulusCI:
 
 ```bash
-sf org create scratch --definition-file orgs/dev.json --alias tts_qa --duration-days 30
-cci org import tts_qa tts_qa
+sf org create scratch --definition-file orgs/dev.json --alias sdg_qa --duration-days 30
+cci org import sdg_qa sdg_qa
 ```
 
 #### Using CumulusCI:
 
 ```bash
-cci org scratch dev tts_qa --days 30
+cci org scratch dev sdg_qa --days 30
 ```
 
 Deploy to the QA org:
 
 ```bash
-cci flow run qa_org --org tts_qa
+cci flow run qa_org --org sdg_qa
 ```
 
 ### 6. Validate Your Changes
@@ -170,32 +170,32 @@ cci org list
 ### View Org Information
 
 ```bash
-cci org info tts_dev
+cci org info sdg_dev
 ```
 
 ### Open an Org in Browser
 
 ```bash
-cci org browser tts_dev
+cci org browser sdg_dev
 ```
 
 ### Run Specific Tasks
 
 ```bash
-cci task run deploy --org tts_dev
-cci task run assign_permission_sets --org tts_dev
+cci task run deploy --org sdg_dev
+cci task run assign_permission_sets --org sdg_dev
 ```
 
 ### Delete Test Data
 
 ```bash
-cci task run delete_data --org tts_dev
+cci task run delete_data --org sdg_dev
 ```
 
 ### Load Sample Data
 
 ```bash
-cci task run load_dataset --org tts_dev
+cci task run load_dataset --org sdg_dev
 ```
 
 ## Project Structure

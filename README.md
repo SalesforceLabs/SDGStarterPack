@@ -28,22 +28,22 @@ You can also install the latest package version directly using the package insta
 
 **Production:**
 ```
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04tDm0000011Q74IAE
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg7000000Mh37AAC
 ```
 
 **Sandbox:**
 ```
-https://test.salesforce.com/packaging/installPackage.apexp?p0=04tDm0000011Q74IAE
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04tg7000000Mh37AAC
 ```
 
-Replace `04t...` with the latest package version ID. Contact the maintainers for the current version ID.
+These links install the latest version (0.6.0, package version ID `04tg7000000Mh37AAC`). No installation key is required.
 
 ## Post-Installation Setup
 
 After installation, assign the appropriate permission sets to users:
 
-- **SDG User Permission** - Base permissions for all users
-- **SDG Admin Permission** - For administrators who can change configuration
+- **SDG User** - Base permissions for all users
+- **SDG Admin** - For administrators who can change configuration
 
 ### Assigning Permission Sets
 
